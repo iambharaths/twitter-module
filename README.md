@@ -8,9 +8,9 @@ The second module is a REST based web service to show these fetched tweets sorte
 ### twitter-data-populator
 On running the twitter-data-populator-0.0.1.jar, the appication connects to the Filtered Stream API of twitter and starts fetching tweets based on the accounts, hastags which are followed for that token owner. On starting the accounts to be followed can be specified as VM arguments 
 
-For fetching tweets tweeted from certain users: `-Daccounts=username1,username2`
+For fetching tweets tweeted from certain users, the usernames can be specified seperated by comma like: `-Daccounts=username1,username2`
 
-For fetching tweets based on hashTags : `-Dtags=HashTag1,HashTag2` without adding # in front
+Similarly For fetching tweets based on hashTags : `-Dtags=HashTag1,HashTag2` without adding # in front
 
 For storing Tweets Apache Solr is being used (https://www.apache.org/dyn/closer.lua/lucene/solr/7.7.3/solr-7.7.3.zip). Before starting the application Solr should be up and a collection named "tweets" is to be created.
 
