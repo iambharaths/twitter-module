@@ -6,7 +6,7 @@ The second module is a REST based web service to show these fetched tweets sorte
 
 ## Module 1
 ### twitter-data-populator
-On running the twitter-data-populator-0.0.1.jar, the appication connects to the Filtered Stream API of twitter and starts fetching tweets based on the accounts, hastags which are followed for that token owner. On starting the accounts to be followed can be specified as VM arguments 
+On running the twitter-data-populator-0.0.1.jar, the appication connects to the Filtered Stream API of twitter and starts fetching tweets based on the accounts, hastags which are followed for that token owner. On initial start up the accounts/hashtags to be followed can be specified as VM arguments, which need not be mentioned again for restarts only new accounts/hashtags need to be given 
 
 For fetching tweets tweeted from certain users, the usernames can be specified seperated by comma like: `-Daccounts=username1,username2`
 
