@@ -20,7 +20,7 @@ The bearer token for the developer account is to be placed in the application.ym
 ### tweet-viewing-service
 On running the main method in the tweet-viewing-service-0.0.1.jar, a REST based web service is started on port 8282, which exposes 4 APIs, the request and response details are mentioned in the apiDocs.html file
 
-There is fetchTweets GET method for fetching the tweets which requires 2 int values as request params page_num and no_of_records, in order fetch the latest 20 tweets the page_num should be 0 and no_of_records should be 20. For the next 20 the page_num should be 0 and no_of_records should be the same. This way the records can be paged based on any threshold value for number of records
+There is fetchTweets GET method for fetching the tweets which requires 2 int values as request params page_num and no_of_records, in order fetch the latest 20 tweets the page_num should be 0 and no_of_records should be 20. For the next 20 the page_num should be 1 and no_of_records should be the same. This way the records can be paged based on any threshold value for number of records
 
 Further there is GET,POST,DELETE methods to fetch rules for the accounts/hashtags currently being followed which would contain matchingRuleId which can be passed as list to delete method which would then stop fetching the tweets based on that id and on refresh those tweets will no longer appear for the /tweets GET method.
 The POST method takes in a list of accounts, hashtags to configure new accounts/hashtags to follow
